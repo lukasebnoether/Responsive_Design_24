@@ -37,6 +37,7 @@ body {
 
 h1 {
     font-family: Messina;
+    text-transform: uppercase;
     font-size: 56px;
     font-weight: 636;
     color: var(--accent-colour-01);
@@ -68,6 +69,8 @@ p {
     font-weight: lighter;
 }
 
+
+
 /*HEADER*/
 
 .logo {
@@ -93,10 +96,24 @@ header{
 
 }
 
+
 li {
     display: inline-block;
     margin-right: 48px;
+    transition: color 0.3s ease; /* Fügt eine sanfte Übergangsanimation hinzu */
 }
+
+li:hover {
+    color: var(--accent-colour-02); /* Ändert die Textfarbe beim Überfahren mit der Maus */
+}
+
+a{ text-decoration: none;
+color: var(--main-colour);
+transition: color 0.3s ease; /* Fügt eine sanfte Übergangsanimation hinzu */
+}
+
+a:hover{color: var(--accent-colour-02)}
+
 
 /*STAGE*/
 
@@ -178,6 +195,9 @@ li {
     border-radius: 0px;
     background-color: var(--accent-colour-02);
     grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
 }
 
 .title-card-01{
@@ -212,12 +232,12 @@ flex-grow: 1;
 }
 
 .img-card-01 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 
 
 }
@@ -230,6 +250,10 @@ flex-grow: 1;
     border-radius: 0px;
     background-color: var(--accent-colour-03);
     grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+
 }
 
 .title-card-02{
@@ -264,12 +288,12 @@ flex-grow: 1;
 }
 
 .img-card-02 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 
 
 }
@@ -282,6 +306,10 @@ flex-grow: 1;
     border-radius: 0px;
     background-color: var(--accent-colour-04);
     grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+
 }
 
 .title-card-03{
@@ -316,12 +344,12 @@ flex-grow: 1;
 }
 
 .img-card-03 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 
 
 }
@@ -334,6 +362,10 @@ flex-grow: 1;
     border-radius: 0px;
     background-color: var(--accent-colour-03);
     grid-column: 4 / span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+
 }
 
 .title-card-04{
@@ -368,12 +400,12 @@ flex-grow: 1;
 }
 
 .img-card-04 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 }
 
 
@@ -385,6 +417,10 @@ flex-grow: 1;
     border-radius: 0px;
     background-color: var(--accent-colour-01);
     grid-column: 7 / span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+
 }
 
 .title-card-05{
@@ -419,12 +455,12 @@ flex-grow: 1;
 }
 
 .img-card-05 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 }
 
 
@@ -436,6 +472,10 @@ flex-grow: 1;
     border-radius: 0px;
     background-color: var(--accent-colour-02);
     grid-column: 10 / span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+
 }
 
 .title-card-06{
@@ -470,12 +510,12 @@ flex-grow: 1;
 }
 
 .img-card-06 {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
+    max-height: 50%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    align-self: center;
 }
 
 
@@ -485,6 +525,7 @@ flex-grow: 1;
 .gallery{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr 1fr;
     column-gap: 24px;
     row-gap: 24px;
     padding-left: 72px;
@@ -497,20 +538,111 @@ flex-grow: 1;
     grid-column: span 5;
 }
 
-.gallery-content{
+.gallery-content-01{
     grid-column: 1 / span 5;
+    grid-row: 2 / span 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 
 .gallery-img-01{
     height: 100%;
-    height: 100%;
     object-fit: contain;
+}
 
+
+.gallery-content-02{
+    grid-column: 6 / span 3;
+    grid-row: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-img-02{
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
+
+.gallery-content-03{
+    grid-column: 6 / span 3;
+    grid-row: 3 span;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-img-03{
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
+
+.gallery-content-04{
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-img-04{
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
 
 
 
+/*FOOTER*/
+.footer
+{
+    background-color: var(--main-colour);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-titel {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title-text {
+    font-size: 3.5vw;
+
+}
+
+.footer-title-container {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+
+.footer-linie {
+    border-top: 4px solid var(--BG-accent-colour);
+    border-bottom: 4px solid var(--BG-accent-colour);
+    height: 40%;
+    flex-grow: 1;
+}
 
 
 

@@ -15,6 +15,13 @@ body{
 }
 
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* Font Styles */
 
 .Produkt-Text-Style {
@@ -45,20 +52,27 @@ body{
 
 }
 
+p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--main-colour);
+}
+
 
 
 /* Header */
 
 header{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     padding-left: 26px;
+    padding-right: 186px;
     background-color: var(--text-colour);
     position: sticky;
     top: 0;
     z-index: 1000;
+
 }
 
 .logo{
@@ -66,17 +80,37 @@ header{
     height: 100%;
 
 }
-.Navigationspunkte{
+
+ul {
+    list-style-type: none;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+
+/* Stage */
+
+.stage{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);; 
+    overflow: hidden;
     align-items: center;
 
 }
 
-
-li {
-    list-style-type: none;
-    display: inline-block;
+.stage-img{
+    grid-area: 1 / span 12;
 }
+
+
+footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--text-colour);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 

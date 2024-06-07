@@ -11,21 +11,26 @@
       <div>
         <ul>
           <li><img src="../Assets/FABRITE-Logo.svg" alt="FABRITE Logo" /></li>
-          <li>Lampen</li>
-          <li>Sofas</li>
-          <li>Tische</li>
-          <li>Vasen</li>
+          <li tabindex="0">
+            <a class="navigation-text-style" href="#product-wrapper">Lampen</a>
+          </li>
+          <li tabindex="1">Sofas</li>
+          <li tabindex="2">Tische</li>
+          <li tabindex="3">Vasen</li>
         </ul>
       </div>
     </header>
 
     <section>
       <div class="stage">
-        <img
-          class="stage-img"
-          src="../Assets/Wohnzimmer.png"
-          alt="Modernes Wohnzimmer mit schwarzem Ledersofa und edler Marmoreinrichtung"
-        />
+        <div class="stage-img">
+          <img
+            src="../Assets/Wohnzimmer.png"
+            alt="Modernes Wohnzimmer mit schwarzem Ledersofa und edler Marmoreinrichtung"
+          />
+        </div>
+        <div class="stage-title">LUXURY</div>
+        <div class="stage-subtitle">Unser Lifestyle</div>
       </div>
     </section>
 
@@ -37,8 +42,11 @@
         <div class="product-img">
           <img
             src="../Assets/Twister-Lampe-01.png"
-            alt="Moderne Lampe 'Twister' schwarz-gold'"
+            alt="Moderne Lampe 'Twister' schwarz-gold – Preis 2435 CHF'"
           />
+          <button class="overlay-button navigation-text-style" tabindex="5">
+            BUY
+          </button>
         </div>
         <div class="product-description">
           <div class="product-text-style">Twister</div>
@@ -50,20 +58,73 @@
         <div class="product-img">
           <img
             src="../Assets/Chiplink-Lampe-02.png"
-            alt="Moderne Lampe 'Chiplink' schwarz-gold'"
+            alt="Moderne Lampe 'Chiplink' schwarz-gold – Preis 2133 CHF'"
           />
+          <button class="overlay-button navigation-text-style" tabindex="6">
+            BUY
+          </button>
         </div>
         <div class="product-description">
           <div class="product-text-style">Chiplink</div>
           <div class="price-text-style">2133 CHF</div>
         </div>
       </div>
+
+      <div class="product-card-03">
+        <div class="product-img">
+          <img
+            src="../Assets/Mixedtwist-Lampe-03.png"
+            alt="Moderne Lampe 'Mixedtwist' schwarz-gold – Preis 3035 CHF"
+          />
+          <button class="overlay-button navigation-text-style" tabindex="7">
+            BUY
+          </button>
+        </div>
+        <div class="product-description">
+          <div class="product-text-style">Mixedtwist</div>
+          <div class="price-text-style">3035 CHF</div>
+        </div>
+      </div>
+
+      <div class="product-card-04">
+        <div class="product-img">
+          <img
+            src="../Assets/Karaglass-Lampe-04.png"
+            alt="Moderne Lampe 'Karaglass' schwarz-gold – Preis 1995 CHF'"
+          />
+          <button class="overlay-button navigation-text-style" tabindex="8">
+            BUY
+          </button>
+        </div>
+        <div class="product-description">
+          <div class="product-text-style">Karaglass</div>
+          <div class="price-text-style">1995 CHF</div>
+        </div>
+      </div>
+
+      <div class="product-card-05">
+        <div class="product-img">
+          <img
+            src="../Assets/Ringling-Lampe-05.png"
+            alt="Moderne Lampe 'Ringling' schwarz-gold – Preis 2600 CHF'"
+          />
+          <button class="overlay-button navigation-text-style" tabindex="9">
+            BUY
+          </button>
+        </div>
+        <div class="product-description">
+          <div class="product-text-style">Ringling</div>
+          <div class="price-text-style">2600 CHF</div>
+        </div>
+      </div>
     </section>
 
     <footer>
       <div>
-        <p>Footer</p>
+        <p tabindex="10">Footer</p>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

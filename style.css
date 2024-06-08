@@ -1,7 +1,5 @@
 body {
     background-color: #192F2A;
-    border: solid 2px #C26B84;
-    height: 100vh;
 }
 
 @font-face {
@@ -61,4 +59,17 @@ button:hover{
     background: #C26B84;
     transition: all  0.5s ease;
     cursor:pointer;
+}
+
+.line-02{
+    height: 4px;
+    background-color: #C26B84;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    padding-right: 36px;
+    padding-left: 36px;
+    padding-top: 36px;
 }

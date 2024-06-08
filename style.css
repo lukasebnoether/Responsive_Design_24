@@ -1,5 +1,7 @@
 body {
     background-color: #192F2A;
+    border: solid 4px #C26B84;
+    height: 100vh;
 }
 
 @font-face {
@@ -12,8 +14,8 @@ h1 {
     font-family: Replica;
     font-size: 96px;
     color: #ffffff;
-    padding-bottom: 96px;
 }
+
 
 .title{
     display: flex;
@@ -21,6 +23,8 @@ h1 {
     flex-wrap: wrap;
     padding-left: 36px;
     padding-right: 36px;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .line{   
@@ -47,7 +51,7 @@ button{
     color: #ffffff;
     font-family: Replica;
     font-size: 24px;
-    padding: 12px;
+    padding: 16px;
     border: 1px solid #ffffff;
 }
 
